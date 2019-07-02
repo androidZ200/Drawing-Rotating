@@ -30,10 +30,11 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StartStopButton = new System.Windows.Forms.Button();
-            this.SettingsButton = new System.Windows.Forms.Button();
+            this.CirclesButton = new System.Windows.Forms.Button();
             this.SpeedTrackBar = new System.Windows.Forms.TrackBar();
             this.ResetButton = new System.Windows.Forms.Button();
             this.ColorTrackBar = new System.Windows.Forms.TrackBar();
+            this.DrawButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColorTrackBar)).BeginInit();
@@ -47,14 +48,14 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(710, 525);
+            this.pictureBox1.Size = new System.Drawing.Size(692, 518);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // StartStopButton
             // 
             this.StartStopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartStopButton.Location = new System.Drawing.Point(729, 13);
+            this.StartStopButton.Location = new System.Drawing.Point(711, 13);
             this.StartStopButton.Name = "StartStopButton";
             this.StartStopButton.Size = new System.Drawing.Size(80, 33);
             this.StartStopButton.TabIndex = 1;
@@ -62,21 +63,21 @@
             this.StartStopButton.UseVisualStyleBackColor = true;
             this.StartStopButton.Click += new System.EventHandler(this.StartStopButton_Click);
             // 
-            // SettingsButton
+            // CirclesButton
             // 
-            this.SettingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SettingsButton.Location = new System.Drawing.Point(729, 91);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(80, 33);
-            this.SettingsButton.TabIndex = 2;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.UseVisualStyleBackColor = true;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            this.CirclesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CirclesButton.Location = new System.Drawing.Point(711, 91);
+            this.CirclesButton.Name = "CirclesButton";
+            this.CirclesButton.Size = new System.Drawing.Size(80, 33);
+            this.CirclesButton.TabIndex = 2;
+            this.CirclesButton.Text = "Circles";
+            this.CirclesButton.UseVisualStyleBackColor = true;
+            this.CirclesButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // SpeedTrackBar
             // 
             this.SpeedTrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SpeedTrackBar.Location = new System.Drawing.Point(729, 131);
+            this.SpeedTrackBar.Location = new System.Drawing.Point(711, 169);
             this.SpeedTrackBar.Maximum = 40;
             this.SpeedTrackBar.Minimum = 1;
             this.SpeedTrackBar.Name = "SpeedTrackBar";
@@ -88,7 +89,7 @@
             // ResetButton
             // 
             this.ResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ResetButton.Location = new System.Drawing.Point(729, 52);
+            this.ResetButton.Location = new System.Drawing.Point(711, 52);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(80, 33);
             this.ResetButton.TabIndex = 4;
@@ -99,7 +100,7 @@
             // ColorTrackBar
             // 
             this.ColorTrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ColorTrackBar.Location = new System.Drawing.Point(730, 168);
+            this.ColorTrackBar.Location = new System.Drawing.Point(712, 206);
             this.ColorTrackBar.Maximum = 255;
             this.ColorTrackBar.Name = "ColorTrackBar";
             this.ColorTrackBar.Size = new System.Drawing.Size(79, 45);
@@ -107,21 +108,34 @@
             this.ColorTrackBar.Value = 100;
             this.ColorTrackBar.Scroll += new System.EventHandler(this.ColorTrackBar_Scroll);
             // 
+            // DrawButton
+            // 
+            this.DrawButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DrawButton.Location = new System.Drawing.Point(711, 130);
+            this.DrawButton.Name = "DrawButton";
+            this.DrawButton.Size = new System.Drawing.Size(80, 33);
+            this.DrawButton.TabIndex = 6;
+            this.DrawButton.Text = "Draw";
+            this.DrawButton.UseVisualStyleBackColor = true;
+            this.DrawButton.Click += new System.EventHandler(this.DrawButton_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 550);
+            this.ClientSize = new System.Drawing.Size(803, 543);
+            this.Controls.Add(this.DrawButton);
             this.Controls.Add(this.ColorTrackBar);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.SpeedTrackBar);
-            this.Controls.Add(this.SettingsButton);
+            this.Controls.Add(this.CirclesButton);
             this.Controls.Add(this.StartStopButton);
             this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(421, 343);
             this.Name = "FormMain";
             this.Text = "Drawing Rotating";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
+            this.SizeChanged += new System.EventHandler(this.FormMain_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColorTrackBar)).EndInit();
@@ -134,10 +148,11 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button StartStopButton;
-        private System.Windows.Forms.Button SettingsButton;
+        private System.Windows.Forms.Button CirclesButton;
         private System.Windows.Forms.TrackBar SpeedTrackBar;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.TrackBar ColorTrackBar;
+        private System.Windows.Forms.Button DrawButton;
     }
 }
 

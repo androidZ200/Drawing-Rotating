@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Drawing_Rotating
 {
-    class DrawingSystem
+    public class DrawingSystem
     {
         public SystemCircle SystemCircle { get; set; } = new SystemCircle();
         private Thread mainThread;
@@ -54,6 +54,16 @@ namespace Drawing_Rotating
                 Play = false;
             }
         }
+        public void Clear()
+        {
+            if (!Play)
+            {
+                while (SystemCircle.Count > 0)
+                    SystemCircle.RemoveCircle(SystemCircle.GetCircle(0));
+                lastTrail = null;
+                GC.Collect();
+            }
+        }
 
         private void Simulation()
         {
@@ -76,7 +86,11 @@ namespace Drawing_Rotating
                         lastTrail = SystemCircle.GetTrail(s.Width, s.Height);
                         g = Graphics.FromImage(lastTrail);
                     }
-                    var bmp = SystemCircle.GetCircles(s.Width, s.Height);
+                    Bitmap bmp;
+                    if (SystemCircle.colorCircle != Color.Black)
+                        bmp = SystemCircle.GetCircles(s.Width, s.Height);
+                    else
+                        bmp = new Bitmap(s.Width, s.Height);
                     Graphics g1 = Graphics.FromImage(bmp);
                     g1.DrawImage(lastTrail, 0, 0);
                     draw(bmp);

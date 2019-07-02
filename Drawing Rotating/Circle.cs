@@ -13,7 +13,7 @@ namespace Drawing_Rotating
         public Circle(float Radius, float Angle, float Speed)
         {
             this.Radius = Radius;
-            this.StartAngle = Angle;
+            StartAngle = CurrentAngle = Angle;
             SpeedAngle = Speed;
         }
 

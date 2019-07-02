@@ -1,6 +1,6 @@
 ﻿namespace Drawing_Rotating
 {
-    partial class FormSettings
+    partial class FormCircles
     {
         /// <summary>
         /// Required designer variable.

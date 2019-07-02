@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Drawing_Rotating
 {
-    public partial class FormSettings : Form
+    public partial class FormCircles : Form
     {
         SystemCircle systemCircle;
         FormMain form;
@@ -47,7 +47,7 @@ namespace Drawing_Rotating
             UpdateCircles();
         }
 
-        public FormSettings(SystemCircle circles, FormMain form)
+        public FormCircles(SystemCircle circles, FormMain form)
         {
             InitializeComponent();
             comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;

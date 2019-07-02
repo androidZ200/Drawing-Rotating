@@ -7,7 +7,7 @@ namespace Drawing_Rotating
 {
     public partial class FormMain : Form
     {
-        DrawingSystem system;
+        public DrawingSystem system;
 
         private void Draw(Bitmap bmp)
         {
@@ -43,7 +43,7 @@ namespace Drawing_Rotating
         private void SettingsButton_Click(object sender, EventArgs e)
         {
             if (system.Play) StartStopButton_Click(sender, e);
-            FormSettings form = new FormSettings(system.SystemCircle, this);
+            FormCircles form = new FormCircles(system.SystemCircle, this);
             form.ShowDialog();
         }
         private void SpeedTrackBar_Scroll(object sender, EventArgs e)
@@ -65,6 +65,17 @@ namespace Drawing_Rotating
         private void ColorTrackBar_Scroll(object sender, EventArgs e)
         {
             system.SystemCircle.colorCircle = Color.FromArgb(ColorTrackBar.Value, ColorTrackBar.Value, ColorTrackBar.Value);
+        }
+        private void FormMain_SizeChanged(object sender, EventArgs e)
+        {
+            UpdatePicture();
+        }
+        private void DrawButton_Click(object sender, EventArgs e)
+        {
+            if (system.Play)
+                StartStopButton_Click(sender, e);
+            FormDraw form = new FormDraw(this);
+            form.ShowDialog();
         }
     }
 }

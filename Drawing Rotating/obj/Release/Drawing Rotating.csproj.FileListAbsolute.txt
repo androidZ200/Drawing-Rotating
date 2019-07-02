@@ -3,9 +3,10 @@ E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\bin\Release\
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\bin\Release\Drawing Rotating.pdb
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing Rotating.csprojAssemblyReference.cache
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing_Rotating.FormMain.resources
-E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing_Rotating.FormSettings.resources
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing_Rotating.Properties.Resources.resources
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing Rotating.csproj.GenerateResource.cache
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing Rotating.csproj.CoreCompileInputs.cache
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing Rotating.exe
 E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing Rotating.pdb
+E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing_Rotating.FormCircles.resources
+E:\YandexDisk\YandexDisk\Projects\Drawing Rotating\Drawing Rotating\obj\Release\Drawing_Rotating.FormDraw.resources

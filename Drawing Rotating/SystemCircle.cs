@@ -101,6 +101,15 @@ namespace Drawing_Rotating
             foreach (var x in circles)
                 x.Reset();
         }
+        public void Sort()
+        {
+            circles.Sort((Circle c1, Circle c2) =>
+            {
+                if (c1.Radius < c2.Radius) return 1;
+                else if (c1.Radius > c2.Radius) return -1;
+                return 0;
+            });
+        }
 
         private void checkSlow()
         {
